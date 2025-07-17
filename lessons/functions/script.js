@@ -53,8 +53,8 @@
 //   console.log("Hello from a funciton declaration");
 // }
 
-const greet = function () {
-  console.log("Hello from a function expression");
-};
+// const greet = function () {
+//   console.log("Hello from a function expression");
+// };
 
-greet();
+// greet();
