@@ -1,5 +1,5 @@
 //guess counter
-guesses = 1;
+let guesses = 1;
 
 // The random number that was chosen
 let randomNumber = Math.floor(Math.random() * 10) + 1;
