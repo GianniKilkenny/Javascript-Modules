@@ -2,7 +2,7 @@ const arr = []; // Where the test scores are stored
 
 let num; //The test score that is stored in the array
 let i = 1;
-while (i <= 3) {
+while (i <= 5) {
   //Prompt that allows for 3 test scores for input
   let message = `Please Enter the score for Test number ${i}`;
   num = parseInt(prompt(message));
