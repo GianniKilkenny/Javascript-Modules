@@ -11,14 +11,25 @@ console.log(fruits);
 
 // console.log(fruits.length);
 
+// push - adds to the end
 fruits.push("Mango");
 console.log(fruits);
 
+// pop - removes from the end
 fruits.pop();
 console.log(fruits);
 
+// shift adds to beginning
 fruits.shift();
 console.log(fruits);
 
-fruits.unshift("Grapes");
+// unshift removes from beginning
+fruits.unshift("Grape");
+console.log(fruits);
+
+// splice - add / remove elements
+fruits.splice(1, 1, "Peach");
+console.log(fruits);
+
+fruits.splice(1, 2);
 console.log(fruits);
