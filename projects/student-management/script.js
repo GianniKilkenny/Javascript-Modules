@@ -46,4 +46,4 @@ console.log(formatStudentList());
 console.log(students);
 
 console.log("Students with A's");
-console.log(topStudents(80));
+console.log(topStudents(95));
