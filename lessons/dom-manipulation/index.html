@@ -4,13 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dom Manipulation</title>
+
+    <style>
+      .highlight {
+        background-color: yellow;
+        color: black;
+        font-weight: bold;
+      }
+    </style>
   </head>
   <body>
     <h1 id="main-heading">Welcome to Javascript</h1>
     <p class="description">This is a pragraph1</p>
     <p class="description">This is a pragraph2</p>
     <p class="description">This is a pragraph3</p>
-    <button onclick="changeText()">Click me</button>
+    <button>Click me</button>
     <script>
       function changeText() {
         document.getElementById("main-heading").textContent =
@@ -28,8 +36,36 @@
       // const firstParagraph = document.querySelector(".description");
       // console.log(firstParagraph.textContent);
 
-      const allParagraph = document.querySelectorAll(".description");
-      allParagraph.forEach((para) => console.log(para.textContent));
+      // const allParagraph = document.querySelectorAll(".description");
+      // allParagraph.forEach((para) => console.log(para.textContent));
+
+      // const heading = document.getElementById("main-heading");
+      // heading.textContent = "new-heading";
+      // heading.innerHTML = "<span style ='color: red'>styled</span>heading";
+
+      // heading.style.color = "blue";
+      // heading.style.fontSize = "24px";
+      // heading.style.textAlign = "Center";
+
+      // Adding, Removing, Creating
+      // const newParagraph = document.createElement("p");
+      // newParagraph.textContent = "This is a new Paragraph";
+      // document.body.appendChild(newParagraph);
+
+      // document.querySelector("button").addEventListener("click", function () {
+      //   // document.body.removeChild(newParagraph);
+
+      //   heading.classList.remove("highlight");
+      // });
+
+      // const heading = document.getElementById("main-heading");
+      // heading.classList.add("highlight");
+
+      const link = document.createElement("a");
+      link.setAttribute("href", "https://google.com");
+      link.setAttribute("target", "_blank");
+      link.textContent = "Visit Google";
+      document.body.appendChild(link);
     </script>
   </body>
 </html>
