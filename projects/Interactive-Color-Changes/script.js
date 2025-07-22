@@ -6,3 +6,8 @@ colors.forEach((color) => {
     document.body.style.backgroundColor = color;
   });
 });
+
+const reset = document.getElementById("btn");
+reset.addEventListener("click", () => {
+  document.body.style.backgroundColor = "white";
+});
