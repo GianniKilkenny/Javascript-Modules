@@ -7,9 +7,9 @@
   </head>
   <body>
     <h1 id="main-heading">Welcome to Javascript</h1>
-    <p class="decription">This is a pragraph1</p>
-    <p class="decription">This is a pragraph2</p>
-    <p class="decription">This is a pragraph3</p>
+    <p class="description">This is a pragraph1</p>
+    <p class="description">This is a pragraph2</p>
+    <p class="description">This is a pragraph3</p>
     <button onclick="changeText()">Click me</button>
     <script>
       function changeText() {
@@ -19,11 +19,17 @@
 
       //   console.log(document.getElementById("main-heading").textContent);
 
-      //   const paragraphs = document.getElementsByClassName("decription");
+      //   const paragraphs = document.getElementsByClassName("description");
       //   console.log("paragraphs [0] =", paragraphs[0].textContent);
 
-      const buttons = document.getElementsByTagName("button");
-      console.log("buttons =", buttons[0].textContent);
+      // const buttons = document.getElementsByTagName("button");
+      // console.log("buttons =", buttons[0].textContent);
+
+      // const firstParagraph = document.querySelector(".description");
+      // console.log(firstParagraph.textContent);
+
+      const allParagraph = document.querySelectorAll(".description");
+      allParagraph.forEach((para) => console.log(para.textContent));
     </script>
   </body>
 </html>
