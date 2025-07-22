@@ -1,0 +1,18 @@
+header {
+  text-align: center;
+  padding: 30px;
+}
+
+.colors {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 30px;
+}
+.color {
+  border: 1px solid black;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: lightblue;
+}
